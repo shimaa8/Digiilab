@@ -1,0 +1,557 @@
+
+body {
+        font-family: "Nunito Sans", Arial, sans-serif;
+    background: #fff;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #999999;
+   transition: .2s all;
+    overflow-x: hidden;
+    
+    
+}
+a{
+    transition:all 0.3s ease-in-out;
+    text-decoration: none;
+        color: #31de79;
+}
+
+.home .scrolled .nav-link.active {
+    color: #31de79 !important;}
+.navbar-light{
+        background: transparent !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+/*how apper line in a nav */
+
+
+
+.home.nav-link.active {
+    color: #31de79!important;
+    
+}
+.home .nav-link{
+     transform: translateX(0);
+        transition: background 0.2s ease-in-out,
+                    color 0.2s ease-in-out,
+                    transform 0.2s ease-in-out;
+      color: #999999!important;
+
+}
+.home .nav-item{
+      padding-left: 20px!important;
+    padding-right: 20px!important;
+}
+.home .nav-link::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #31de79;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.2s ease-in-out 0s;
+}
+ .home .nav-link:hover:before {
+  visibility: visible;
+     transform: scaleX(1); 
+}
+/*end of code undrline text*/
+
+
+.navbar-default{
+  transition:500ms ease;
+  background:transparent;
+}
+.navbar-default.scrolled{
+  background:#fff;
+}
+
+#owl-demo .slides img{
+    display: block;
+    width: 100%;
+    height: auto;
+      margin:15px auto;
+}
+.topLeft{
+    transform: rotate(-90deg);
+     transform-origin: top left;
+    text-align: center;
+    margin: 0rem;
+    position: absolute;
+    top: 100px;;
+    left: 4em;
+    height: 100%;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-size: 12px;
+    z-index: 1;
+    color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+  transform: rotate(-90deg) scaleX(-1);
+  transform-origin: top left;
+}
+
+  .content {
+    transform: scaleX(-1);
+  }
+.headerS{
+    color: #31de79;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+.heading h2{
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.5;
+        color: rgba(0, 0, 0, 0.9);
+}
+.text{
+    
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    right: 0;
+    max-width: 50%;
+    
+}
+
+.text h1{
+        font-size: 36px;
+    color: #000000;
+    line-height: 1.3;
+    font-weight: 100;
+}
+
+.text p{
+    
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.btn-primary{
+    background: linear-gradient(135deg, #9ff669 0%, #31de79 100%);
+    border: 1px solid #31de79 !important;
+    color: #fff !important;
+}
+
+.btn{
+    border-radius: 30px;
+    box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
+    display: inline-block;
+    color: #212529;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.services{
+    background: #f8f9fa !important;
+}
+
+.icon{
+    
+    font-size: 100px;
+    color: #000000;
+    line-height: 1.2;
+}
+.virtcl-h2{
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 400;
+}
+
+.nav-pills{
+    background: #31de79!important;
+        padding-bottom: 360px;
+
+}
+.services .nav-link:hover{
+    color: #fff!important;
+    font-size: 20px;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color:transparent!important;
+    font-weight: 700;
+        opacity: 1;
+
+}
+.services .nav-link{
+        float: left;
+    border-radius: 0;
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    text-decoration: none!important;
+        background-color:transparent!important;
+    
+}
+/* to make the arrow abber when it active and hover on it*/
+ .services .nav-link.active:after, .services .nav-link:hover:after {
+    opacity: 1;
+}
+.services .nav-link::after{
+      position: absolute;
+    top: 20px;
+    bottom: 10px;
+    right: 0;
+    width: 0;
+    height: 0;
+    content: '';
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #fafafa transparent transparent;
+    opacity: 0;
+}
+
+
+.services-sc2 {
+    background-image: url(../img/image_4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+
+.serv2-text {
+    display: block;
+    width: 100%;
+    position: relative;
+    background: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1px;
+    padding: 60px 80px 60px 100px;
+    transition: .3s all ease;
+    color: #31de79;
+    text-decoration: none;
+}
+.serv2-text:hover{
+    transform: translateX(-80px);
+}
+.serv2-text::after{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    bottom: 0;
+    content: '';
+    width: 360%;
+    background: rgba(255, 255, 255, 0.9);
+}
+.serv2-text span:first-child{
+    opacity: 0;
+}
+
+
+
+.serv2-text span:first-last{
+    opacity: 1;
+}
+.serv2-text span{
+    font-size: 20px;
+    color: #89ecb2;
+}
+
+.serv2-text h2{
+    color: #31de79;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 1px;
+    display: block!important;
+}
+
+.serv2-text p{
+    color: #232931;
+    margin-bottom: 1px;
+    display: block!important;
+}
+
+.serv2-text .ico{
+     position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    display: inline-block;
+}
+
+
+.col-carousel {
+	margin: 70px 0;
+}
+
+/* owl nav */
+
+.owl-dots {
+  text-align: center;
+  padding-top: 15px;
+}
+.owl-dots button.owl-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #ccc;
+  margin: 0 3px;
+}
+.owl-dots button.owl-dot.active {
+  background-color: #31de79;
+}
+.owl-dots button.owl-dot:focus {
+  outline: none;
+}
+.text-layer{
+        position: absolute;
+        bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color:#31de79;
+    padding: 1em 0;
+        transition: all 0.6s ease;
+    opacity: 0;
+}
+
+/* i need ma;e to text and img hover together not each*/
+.text-layer:hover{
+    opacity: 1;
+   
+
+}
+
+
+.project .img{
+        position: relative;
+    overflow: hidden;
+}
+
+.project img:hover{
+     overflow: hidden;
+        transform: scale(1.1);
+}
+.projects .text-layer h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0;
+}
+.projects .text-layer a{
+    color:#fff;
+    text-decoration: none;
+}
+.projects .text-layer span{
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.project{
+        
+    position: relative;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    z-index: 0;
+    margin-bottom: 50px;
+}
+.txt-about h2{
+          font-size: 34px;
+    text-transform: capitalize;
+    font-weight: 400;
+        line-height: 1.5;
+    color: rgba(0, 0, 0, 0.9);
+}
+.imm{
+    background-image: url(../img/image_4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    width: 100%;
+    height: 100%;
+}
+.count-layer{
+
+}
+@media (min-width: 992px){
+.txt-layer{
+   padding-left: 120px !important;
+    margin-left: -120px;
+    background-color: #31de79 !important;
+  text-align: left;
+    display: inline-block;
+}}
+
+.txt-layer .num{
+color: #000000;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+
+}
+
+.txt-layer span{
+    color: #000;
+    margin-bottom: 10px;
+    font-weight: 500;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  
+    font-size: 18px;
+}
+.img-person{
+    background-image: url(../img/person_1.jpg);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.staff .txt-person h3{
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+}
+
+.staff .position-person{
+    color: #31de79;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+}
+.media-person li{
+ 
+list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+.media-person li a{
+    color: #000000!important;
+    text-decoration: none;
+}
+
+.Testimony{
+    position: relative;
+    background: #31de79;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.header{
+    margin-top: 100px;
+}
+.header h2{
+    color:#fff;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+        text-align: center;
+
+}
+
+.user-item{
+    display: block;
+    position: relative;
+    color: rgba(0, 0, 0, 0.7);
+}
+.user-img{
+    background-image: url(../img/person_1.jpg);
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 8px solid #31de79;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.text-user{
+ background-color: #fff;
+    border-radius: 4px;
+    margin-top: -65px;
+    
+}
+
+.text-user p{
+    font-size: 20px;
+    margin-bottom: 1.5rem!important;
+padding-top:90px;
+
+}
+
+.text-user .user-name{
+    color: #000000;
+     font-size: 20px;
+    font-weight: 400;
+    margin-top: 0!important;
+
+
+}
+.user-position{
+        font-size: 18px;
+    color: #b3b3b3;
+}
+.user-item{
+        width: 290px;
+    margin-right: 30px;
+}
+
+
+.Testimony .owl-dots button.owl-dot.active {
+  background-color: #fff;
+}
+
+
+.blog{
+    padding: 7em 0
+}
+
+.card-body a{
+        color: #000000!important;
+    font-size:16px;
+}
+.card-body a:hover{
+     transition:all 0.3s ease-in-out;
+    text-decoration: none;
+   
+        color: #31de79!important;
+}
+.card{
+    border: none;
+}
+.card-body{
+        background-color: #f8f9fa!important;
+    justify-content: flex-end;
+}
+.card-footer{
+    
+}
+.portf7{
+   
+}
